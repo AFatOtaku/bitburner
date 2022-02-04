@@ -1,0 +1,103 @@
+//自动升级黑客网脚本
+function myMoney() {
+    return getServerMoneyAvailable("home");
+}
+
+disableLog("getServerMoneyAvailable");
+disableLog("sleep");
+
+var targetNodes = 20;
+var targetLevel = 160;
+var targetRam = 64;
+var targetCore = 8;
+var cost = 0;
+while(true) {
+    var breakFlag = true;
+    print("运行中...")
+    if(hacknet.numNodes() < targetNodes) {
+        hacknet.purchaseNode();
+        if(hacknet.numNodes() < targetNodes) {
+            breakFlag = false;
+        }
+    }
+    for (var i = 0; i < hacknet.numNodes(); i++) {
+        if(hacknet.getNodeStats(i).level < targetLevel ||
+        hacknet.getNodeStats(i).ram < targetRam ||
+        hacknet.getNodeStats(i).cores < targetCore) {
+            breakFlag = false;
+        }
+        while (myMoney() > hacknet.getLevelUpgradeCost(i, 1) 
+        && hacknet.getNodeStats(i).level < targetLevel) {
+            hacknet.upgradeLevel(i, 1);
+            print("节点" + hacknet.getNodeStats(i).name +
+             " 等级升到了" + hacknet.getNodeStats(i).level)
+            sleep(20);
+        }
+        while (myMoney() > hacknet.getRamUpgradeCost(i, 1) 
+        && hacknet.getNodeStats(i).ram < targetRam) {
+            hacknet.upgradeRam(i, 1);
+            print("节点" + hacknet.getNodeStats(i).name +
+             " 内存升到了" + hacknet.getNodeStats(i).ram)
+            sleep(20);
+        }
+        while (myMoney() > hacknet.getCoreUpgradeCost(i, 1) 
+        && hacknet.getNodeStats(i).cores < targetCore) {
+            hacknet.upgradeCore(i, 1);
+            print("节点" + hacknet.getNodeStats(i).name +
+             " 核心升到了" + hacknet.getNodeStats(i).cores)
+            sleep(20);
+        }
+    };
+    if(breakFlag){
+        print("全部目标已达成，退出程序.")
+        break;
+    }
+    sleep(10000);
+};
+
+
+// while(hacknet.numNodes() < cnt) {
+//     res = hacknet.purchaseNode();
+//     print("Purchased hacknet Node with index " + res);
+// };
+
+
+
+// for (var i = 0; i < cnt; i++) {
+//     while (hacknet.getNodeStats(i).level <= targetLevel) {
+//         var cost = hacknet.getLevelUpgradeCost(i, 1);
+//         while (myMoney() < cost) {
+//             print("Need $" + cost + " . Have $" + myMoney());
+//             sleep(100);
+//         }
+//         res = hacknet.upgradeLevel(i, 1);
+//     };
+// };
+
+// print("All nodes upgraded to level " + targetLevel.toString);
+
+// for (var i = 0; i < cnt; i++) {
+//     while (hacknet.getNodeStats(i).ram < targetRam) {
+//         var cost = hacknet.getRamUpgradeCost(i, 1);
+//         while (myMoney() < cost) {
+//             print("Need $" + cost + " . Have $" + myMoney());
+//             sleep(1000);
+//         }
+//         res = hacknet.upgradeRam(i, 1);
+//     };
+// };
+
+// print("All nodes upgraded to " + targetRam.toString + "GB RAM");
+
+// for (var i = 0; i < cnt; i++) {
+//     while (hacknet.getNodeStats(i).cores < targetCore) {
+//         var cost = hacknet.getCoreUpgradeCost(i, 1);
+//         while (myMoney() < cost) {
+//             print("Need $" + cost + " . Have $" + myMoney());
+//             sleep(3000);
+//         }
+//         res = hacknet.upgradeCore(i, 1);
+//     };
+// };
+
+// print("All nodes upgraded to " + targetCore.toString + " cores");

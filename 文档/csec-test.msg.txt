@@ -1,0 +1,22 @@
+Message received from unknown sender:
+
+We've been watching you. Your skills are very impressive. But you're wasting your talents. If you join us, you can put your skills to good use and change the world for the better. If you join us, we can unlock your full potential.
+
+But first, you must pass our test. Find and install the backdoor on our server.
+
+-CyberSec
+
+This message was saved as csec-test.msg onto your home computer.
+
+收到来自未知发件人的信息。
+
+我们一直在关注你。你的技能非常令人印象深刻。但你在浪费你的才能。如果你加入我们，你可以好好利用你的技能，使世界变得更好。如果你加入我们，我们可以释放你的全部潜力。
+
+但首先，你必须通过我们的测试。找到并安装我们服务器上的后门。
+
+-CyberSec
+
+这条信息以csec-test.msg的形式保存在你的家庭电脑上。
+
+路径 -> "CSEC","foodnstuff","home"
+进入后装后门

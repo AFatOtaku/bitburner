@@ -1,0 +1,32 @@
+Sector-12
+    初始城市(Sector-12) 等级一定以上 自动收到
+
+Netburners
+    等级一定以上 自动收到
+
+Tian Di Hui
+    城市 New Tokyo 等级一定以上 自动收到
+
+Aevum
+    城市 Aevum 等级一定以上 自动收到
+
+CyberSec
+    在服务器 CSEC 上装入后门
+    1个端口 黑客等级 54 
+
+The Black Hand
+    在服务器 I.I.I.I 上装入后门
+    3个端口 黑客等级 364
+    
+run4theh111z(未进入 不知道名字)
+    在服务器 run4theh111z 上装入后门
+    4个端口 黑客等级 545
+    
+
+
+
+
+
+
+
+

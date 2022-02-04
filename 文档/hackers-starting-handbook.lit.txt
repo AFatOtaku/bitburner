@@ -1,0 +1,48 @@
+The Beginner's Guide to Hacking
+
+Some resources:
+
+Learn to Program
+
+For Experienced JavaScript Developers: NetscriptJS
+
+Netscript Documentation
+
+When starting out, hacking is the most profitable way to earn money and progress. This is a brief collection of tips/pointers on how to make the most out of your hacking scripts.
+
+-hack() and grow() both work by percentages. hack() steals a certain percentage of the money on a server, and grow() increases the amount of money on a server by some percentage (multiplicatively)
+
+-Because hack() and grow() work by percentages, they are more effective if the target server has a high amount of money. Therefore, you should try to increase the amount of money on a server (using grow()) to a certain amount before hacking it. Two important Netscript functions for this are getServerMoneyAvailable() and getServerMaxMoney()
+
+-Keep security level low. Security level affects everything when hacking. Two important Netscript functions for this are getServerSecurityLevel() and getServerMinSecurityLevel()
+
+-Purchase additional servers by visiting 'Alpha Enterprises' in the city. They are relatively cheap and give you valuable RAM to run more scripts early in the game
+
+-Prioritize upgrading the RAM on your home computer. This can also be done at 'Alpha Enterprises'
+
+-Many low level servers have free RAM. You can use this RAM to run your scripts. Use the scp Terminal or Netscript command to copy your scripts onto these servers and then run them.
+
+
+黑客入门指南
+
+一些资源。
+
+学习编程
+
+对于有经验的JavaScript开发者。NetscriptJS
+
+Netscript文档
+
+刚开始的时候，黑客是赚钱和进步的最有利方式。这是一个关于如何使你的黑客脚本发挥最大作用的技巧/指针的简短集合。
+
+-hack()和grow()都是按百分比工作的。hack()偷取服务器上一定比例的钱，而grow()使服务器上的钱按一定比例增加（乘法）。
+
+-因为hack()和grow()是按百分比工作的，如果目标服务器上有大量的钱，它们就会更有效。因此，在黑客攻击之前，你应该尝试将服务器上的资金量（使用grow()）增加到一定数量。这方面的两个重要Netscript函数是getServerMoneyAvailable()和getServerMaxMoney()
+
+-保持低的安全级别。在黑客攻击时，安全级别会影响一切。这方面的两个重要Netscript函数是getServerSecurityLevel()和getServerMinSecurityLevel()
+
+-通过访问城市中的 "阿尔法企业 "购买额外的服务器。它们相对便宜，并为你提供宝贵的内存，以便在游戏初期运行更多的脚本。
+
+-优先升级你家里电脑的内存。这也可以在'阿尔法企业'完成。
+
+-许多低级别的服务器有免费的RAM。你可以使用这些内存来运行你的脚本。使用scp终端或Netscript命令，将你的脚本复制到这些服务器上，然后运行它们。
