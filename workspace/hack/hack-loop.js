@@ -140,6 +140,13 @@ async function hackEventLoop(ns, name, delayInterval, hackScript, growScript, we
 		ns.print(`【${count}】初步计算\nWeaken(t=${weakenThread}), 安全(${security.toFixed(2)}), 阈值(${securityThreshold.toFixed(2)})\nGrow(t=${growThread}), 当前(${formatMoney(money)}), 阈值(${(formatMoney(moneyThreshold))}),\nHack(t=${hackThread})`);
 		// 判断Ram占用是否超出上限
 		let freeRam = hostServer.maxRam - ns.getServerUsedRam(hostServer.hostname);
+		// 给HOME留30G的空间运行日常脚本
+		if(hostServer.hostname === "home") {
+			freeRam = hostServer.maxRam - ns.getServerUsedRam(hostServer.hostname) - 30;
+			if(freeRam < 0){
+				freeRam = 0;
+			}
+		}
 		var totalNeedRam = 0;
 		do {
 

@@ -17,7 +17,6 @@ export async function main(ns) {
             }
             own = ns.getPurchasedServers()
         } else {
-            breakFlag = false;
             break;
         }
         await ns.sleep(1000);
