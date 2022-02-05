@@ -1,0 +1,58 @@
+
+比特诺德-2：地下世界的崛起
+
+源文件级别: 0 / 3
+
+
+难度：简单
+
+
+从阴影中，他们崛起了。
+
+有组织的犯罪集团迅速填补了20世纪50年代西方政府崩溃后留下的权力空白。随着社会和文明的崩溃，人们迅速屈服于人类与生俱来的邪恶和野蛮的冲动。有组织的犯罪派别迅速上升到现代世界的顶端。
+
+在这个BitNode中。
+
+你的黑客水平降低了20%
+增长率和服务器上的最大资金量明显减少
+从犯罪和渗透中获得的金钱数量增加了三倍
+某些派别（Slum Snakes, Tetrads, The Syndicate, The Dark Army, Speakers for the Dead, NiteSec, The Black Hand）让玩家有能力组建和管理自己的帮派。这些帮派将为玩家赢得金钱和相应派别的声誉。
+游戏中的每一项增强功能都可以通过上述派别获得。
+对于上面没有列出的每一个派别，声誉收益减半。
+你将不再通过派别获得被动的声誉。
+
+摧毁这个比特节点会给你源文件2，如果你已经有了这个源文件，它将升级它的等级，最高可达3。这个源文件允许你在其他比特节点组成帮派，一旦你的业力下降到一定值。它还可以增加玩家的犯罪成功率、犯罪资金和魅力倍数。
+
+1级：24%。
+第二级：36%。
+第三级：42%。
+
+
+BitNode-2: Rise of the Underworld
+
+Source-File Level: 0 / 3
+
+
+Difficulty: easy
+
+
+From the shadows, they rose.
+
+Organized crime groups quickly filled the void of power left behind from the collapse of Western government in the 2050s. As society and civilization broke down, people quickly succumbed to the innate human impulse of evil and savagery. The organized crime factions quickly rose to the top of the modern world.
+
+In this BitNode:
+
+Your hacking level is reduced by 20%
+The growth rate and maximum amount of money available on servers are significantly decreased
+The amount of money gained from crimes and Infiltration is tripled
+Certain Factions (Slum Snakes, Tetrads, The Syndicate, The Dark Army, Speakers for the Dead, NiteSec, The Black Hand) give the player the ability to form and manage their own gangs. These gangs will earn the player money and reputation with the corresponding Faction
+Every Augmentation in the game will be available through the Factions listed above
+For every Faction NOT listed above, reputation gains are halved
+You will no longer gain passive reputation with Factions
+
+Destroying this BitNode will give you Source-File 2, or if you already have this Source-File it will upgrade its level up to a maximum of 3. This Source-File allows you to form gangs in other BitNodes once your karma decreases to a certain value. It also increases the player's crime success rate, crime money, and charisma multipliers by:
+
+Level 1: 24%
+Level 2: 36%
+Level 3: 42%
+
