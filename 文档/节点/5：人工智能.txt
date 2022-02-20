@@ -1,0 +1,61 @@
+
+BitNode-5: 人工智能
+
+源文件级别：0 / 3
+
+
+
+难度：普通
+
+
+
+他们说这是不可能的。他们说，人类的大脑，以及它的意识和智慧，是无法被复制的。他们说，大脑的复杂性是由不可预测的、非线性的相互作用造成的，不能用1和0来模拟。他们错了。
+
+在这个BitNode中。
+
+服务器的基本安全等级提高了一倍
+服务器的起始资金减半，但最高资金保持不变
+大多数挣钱的方法现在给的钱明显减少了
+渗透可以多获得50%的声誉和金钱
+公司的估值降低了50%，因此利润也降低了
+补给品更加昂贵
+黑客的经验获得率降低
+
+摧毁这个比特节点将给你提供源文件5，如果你已经有了这个源文件，它将升级它的等级，最高可达3。这个源文件给予你一个特殊的新状态，叫做智力。智力是独一无二的，因为它是永久的和持久的（它永远不会被重置为1）。然而，获得智力经验比其他状态要慢得多，而且它也是隐藏的（你不会知道你何时获得经验以及获得多少）。更高的智力水平会提高你在游戏中许多行动的产量。
+
+此外，这个源文件将解锁getBitNodeMultipliers() Netscript函数，并让你从Formulas.exe开始，还将提高你所有与黑客有关的倍数。
+
+第1级：8%。
+第2级：12
+第三级: 14%
+
+
+BitNode-5: Artificial Intelligence
+
+Source-File Level: 0 / 3
+
+
+
+Difficulty: normal
+
+
+
+They said it couldn't be done. They said the human brain, along with its consciousness and intelligence, couldn't be replicated. They said the complexity of the brain results from unpredictable, nonlinear interactions that couldn't be modeled by 1's and 0's. They were wrong.
+
+In this BitNode:
+
+The base security level of servers is doubled
+The starting money on servers is halved, but the maximum money remains the same
+Most methods of earning money now give significantly less
+Infiltration gives 50% more reputation and money
+Corporations have 50% lower valuations and are therefore less profitable
+Augmentations are more expensive
+Hacking experience gain rates are reduced
+
+Destroying this BitNode will give you Source-File 5, or if you already have this Source-File it will upgrade its level up to a maximum of 3. This Source-File grants you a special new stat called Intelligence. Intelligence is unique because it is permanent and persistent (it never gets reset back to 1). However gaining Intelligence experience is much slower than other stats, and it is also hidden (you won't know when you gain experience and how much). Higher Intelligence levels will boost your production for many actions in the game.
+
+In addition, this Source-File will unlock the getBitNodeMultipliers() Netscript function and let you start with Formulas.exe, and will also raise all of your hacking-related multipliers by:
+
+Level 1: 8%
+Level 2: 12%
+Level 3: 14%

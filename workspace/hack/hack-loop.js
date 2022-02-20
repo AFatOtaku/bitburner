@@ -36,7 +36,7 @@ function analyzeServer(ns, server) {
 	// ns.print(`HackTime: ${(hackTime / 1000).toFixed(2)} s`);
 
 	// 单个Thread一次Weaken
-	const weakenValue = ns.weakenAnalyze(1);
+	const weakenValue = ns.weakenAnalyze(1,server.cpuCores);
 	// ns.print(`WeakenValue: ${weakenValue}`);
 
 	// Weaken时间
@@ -142,9 +142,11 @@ async function hackEventLoop(ns, name, delayInterval, hackScript, growScript, we
 		let freeRam = hostServer.maxRam - ns.getServerUsedRam(hostServer.hostname);
 		// 给HOME留30G的空间运行日常脚本
 		if(hostServer.hostname === "home") {
-			freeRam = hostServer.maxRam - ns.getServerUsedRam(hostServer.hostname) - 30;
-			if(freeRam < 0){
-				freeRam = 0;
+			if(hostServer.maxRam > 500){
+				freeRam = hostServer.maxRam - ns.getServerUsedRam(hostServer.hostname) - 30;
+				if(freeRam < 0){
+					freeRam = 0;
+				}
 			}
 		}
 		var totalNeedRam = 0;

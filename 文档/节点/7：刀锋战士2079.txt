@@ -1,0 +1,59 @@
+位面节点-7：刀锋战士2079
+
+源文件级别: 0 / 3
+
+
+
+难度：困难
+
+
+
+21世纪中叶，你在OmniTek公司从事尖端工作，是高级合成机器人（简称Synthoids）的AI设计团队的一员。你在公司的第六代合成人设计中帮助实现了重大的技术突破，被称为MK-VI，开发了一个超智能的人工智能。许多人认为，这是有史以来第一个有知觉的人工智能。这使得Synthoid模型比创造它们的人类更强大、更快速、更智能。
+
+在这个BitNode中，你将能够访问Bladeburner API，它允许你通过Netscript访问Bladeburner功能。此外。
+
+你从Bladeburner合同/行动中获得的等级降低了40%。
+刀锋战士技能的成本是技能点的两倍
+增援的费用增加了3倍
+黑客攻击和黑客网络节点的利润将大大降低
+你的黑客水平降低了65%。
+从脚本中获得的黑客经验减少了75%。
+公司的估值降低了80%，因此利润率也降低了
+为公司工作的利润减少50%。
+犯罪和渗透的利润减少25%。
+
+摧毁这个比特节点将给你提供源文件7，如果你已经有了这个源文件，它将把它的等级提升到最高3级。这个源文件允许你访问其他比特节点的Bladeburner Netscript API。此外，这个源文件将使你所有的Bladeburner倍增器增加。
+
+第1级：8%。
+第2级：12
+第三级: 14%
+
+BitNode-7: Bladeburners 2079
+
+Source-File Level: 0 / 3
+
+
+
+Difficulty: hard
+
+
+
+In the middle of the 21st century, you were doing cutting-edge work at OmniTek Incorporated as part of the AI design team for advanced synthetic androids, or Synthoids for short. You helped achieve a major technological breakthrough in the sixth generation of the company's Synthoid design, called MK-VI, by developing a hyperintelligent AI. Many argue that this was the first sentient AI ever created. This resulted in Synthoid models that were stronger, faster, and more intelligent than the humans that had created them.
+
+In this BitNode you will be able to access the Bladeburner API, which allows you to access Bladeburner functionality through Netscript. Furthermore:
+
+The rank you gain from Bladeburner contracts/operations is reduced by 40%
+Bladeburner skills cost twice as many skill points
+Augmentations are 3x more expensive
+Hacking and Hacknet Nodes will be significantly less profitable
+Your hacking level is reduced by 65%
+Hacking experience gain from scripts is reduced by 75%
+Corporations have 80% lower valuations and are therefore less profitable
+Working for companies is 50% less profitable
+Crimes and Infiltration are 25% less profitable
+
+Destroying this BitNode will give you Source-File 7, or if you already have this Source-File it will upgrade its level up to a maximum of 3. This Source-File allows you to access the Bladeburner Netscript API in other BitNodes. In addition, this Source-File will increase all of your Bladeburner multipliers by:
+
+Level 1: 8%
+Level 2: 12%
+Level 3: 14%

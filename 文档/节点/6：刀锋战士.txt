@@ -1,0 +1,53 @@
+比特节点-6：刀锋战士
+
+源文件级别：0 / 3
+
+
+
+难度：普通
+
+
+
+21世纪中期，OmniTek公司开始设计和制造先进的合成机器人，简称Synthoids。他们在第六代合成人的设计中取得了重大的技术突破，被称为MK-VI，开发了一个超智能的人工智能。许多人认为，这是有史以来第一个有知觉的人工智能。这导致合成体模型比创造它们的人类更强大、更快速、更智能。
+
+在这个BitNode中，你将能够进入国家安全局的Bladeburner部门，这为进阶提供了一个新机制。此外。
+
+黑客和黑客网络节点的利润将减少
+你的黑客水平降低了65%。
+从脚本中获得的黑客经验减少了75%。
+公司的估值降低80%，因此利润较低
+为公司工作的利润减少50%。
+犯罪和渗透的利润减少25%。
+
+摧毁这个比特节点将给你提供源文件6，如果你已经有了这个源文件，它将把它的等级提升到最高3级。这个源文件允许你在其他比特节点访问NSA的Bladeburner部门。此外，这个源文件将提高你所有战斗状态的等级和经验增益率。
+
+第1级：8%。
+第2级：12
+第三级: 14%
+
+BitNode-6: Bladeburners
+
+Source-File Level: 0 / 3
+
+
+
+Difficulty: normal
+
+
+
+In the middle of the 21st century, OmniTek Incorporated began designing and manufacturing advanced synthetic androids, or Synthoids for short. They achieved a major technological breakthrough in the sixth generation of their Synthoid design, called MK-VI, by developing a hyperintelligent AI. Many argue that this was the first sentient AI ever created. This resulted in Synthoid models that were stronger, faster, and more intelligent than the humans that had created them.
+
+In this BitNode you will be able to access the Bladeburner Division at the NSA, which provides a new mechanic for progression. Furthermore:
+
+Hacking and Hacknet Nodes will be less profitable
+Your hacking level is reduced by 65%
+Hacking experience gain from scripts is reduced by 75%
+Corporations have 80% lower valuations and are therefore less profitable
+Working for companies is 50% less profitable
+Crimes and Infiltration are 25% less profitable
+
+Destroying this BitNode will give you Source-File 6, or if you already have this Source-File it will upgrade its level up to a maximum of 3. This Source-File allows you to access the NSA's Bladeburner Division in other BitNodes. In addition, this Source-File will raise both the level and experience gain rate of all your combat stats by:
+
+Level 1: 8%
+Level 2: 12%
+Level 3: 14%

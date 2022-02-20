@@ -1,0 +1,42 @@
+
+BitNode-1: 源创世
+
+源文件级别：1 / 3
+
+
+
+难度：简单
+
+
+
+第一个由Enders创造的BitNode，用来囚禁人类的思想。它成为所有后来的比特节点的原型和测试场。
+
+这是你玩过的第一个BitNode。它没有任何特殊的修改或机制。
+
+摧毁这个BitNode会给你Source-File 1，如果你已经有了这个Source-File，它会将它的等级提升到最高3级。这个Source-File让玩家在进入一个新的BitNode时，在他/她的家庭电脑上有32GB的内存开始，同时也增加了玩家的所有乘数。
+
+1级：16%。
+第二级：24%。
+第三级：28%。
+
+
+
+BitNode-1: Source Genesis
+
+Source-File Level: 1 / 3
+
+
+
+Difficulty: easy
+
+
+
+The first BitNode created by the Enders to imprison the minds of humans. It became the prototype and testing-grounds for all of the BitNodes that followed.
+
+This is the first BitNode that you play through. It has no special modifications or mechanics.
+
+Destroying this BitNode will give you Source-File 1, or if you already have this Source-File it will upgrade its level up to a maximum of 3. This Source-File lets the player start with 32GB of RAM on his/her home computer when entering a new BitNode, and also increases all of the player's multipliers by:
+
+Level 1: 16%
+Level 2: 24%
+Level 3: 28%

@@ -1,0 +1,47 @@
+
+BitNode-13: 他们是疯子
+
+源文件级别: 0 / 3
+
+
+
+难度: 困难
+
+
+
+随着20世纪40年代增殖体的发明，一个被称为 "机器之神教会 "的宗教团体获得了比任何人都要多的支持。
+
+他们的领袖，艾莉森-"母亲"-斯塔内克据说创造了她自己的增殖体，其力量超越了任何其他增殖体。在重庆找到她并获得她的信任。
+
+在这个BitNode中。
+
+每个状态都被大大降低
+斯塔内克的天赋能力大大增加。
+
+摧毁这个比特节点将给你源文件13，如果你已经有了这个源文件，它将提升它的等级，最高可达3级。这个源文件让机器之神的教会出现在其他比特节点。
+
+这个源文件的每一级都会增加Stanek的礼物的大小。
+
+
+BitNode-13: They're lunatics
+
+Source-File Level: 0 / 3
+
+
+
+Difficulty: hard
+
+
+
+With the invention of Augmentations in the 2040s a religious group known as the Church of the Machine God has rallied far more support than anyone would have hoped.
+
+Their leader, Allison "Mother" Stanek is said to have created her own Augmentation whose power goes beyond any other. Find her in Chongqing and gain her trust.
+
+In this BitNode:
+
+Every stat is significantly reduced
+Stanek's Gift power is significantly increased.
+
+Destroying this BitNode will give you Source-File 13, or if you already have this Source-File it will upgrade its level up to a maximum of 3. This Source-File lets the Church of the Machine God appear in other BitNodes.
+
+Each level of this Source-File increases the size of Stanek's Gift.

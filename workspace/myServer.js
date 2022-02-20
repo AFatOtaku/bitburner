@@ -26,15 +26,12 @@ export async function main(ns) {
     var selfServerList = [];
     for (var i in serverList){
         var serverInfo = serverList[i];
-        if(serverInfo.hostname === "home"){
-            continue;
-        }
         if(serverInfo.purchasedByPlayer){
             selfServerList.push(serverInfo);
         }
     }
     var max = ns.getPurchasedServerLimit();
-    ns.tprint(`${selfServerList.length} / ${max}`);
+    ns.tprint(`${selfServerList.length - 1} / ${max}`);
     selfServerList = sortByRam(selfServerList)
     for (var i in selfServerList){
         var serverInfo = selfServerList[i];

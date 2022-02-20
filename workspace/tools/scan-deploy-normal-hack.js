@@ -1,12 +1,16 @@
-
 // 自动部署的Hack脚本
 const scriptName = "/hack/normal-hack.js";
 
 /** @param {NS} ns **/
 export async function main(ns) {
+	ns.disableLog('ALL')
+	while (true) {
+		ns.print("==========================================")
+		var host = ns.getHostname();
+		await scanServer(ns, host);
+		await ns.sleep(10 * 1000)
+	}
 
-	var host = ns.getHostname();
-	await scanServer(ns, host);
 }
 
 /**
@@ -30,13 +34,14 @@ function getCurrentPortTools(ns) {
  **/
 function runHackTools(ns, server) {
 	// 已经root
-	if (server.hasAdminRights) return;
+	if (server.hasAdminRights) return false;
 	if (!server.sshPortOpen && ns.fileExists("BruteSSH.exe", "home")) ns.brutessh(server.hostname);
 	if (!server.ftpPortOpen && ns.fileExists("FTPCrack.exe", "home")) ns.ftpcrack(server.hostname);
 	if (!server.smtpPortOpen && ns.fileExists("relaySMTP.exe", "home")) ns.relaysmtp(server.hostname);
 	if (!server.httpPortOpen && ns.fileExists("HTTPWorm.exe", "home")) ns.httpworm(server.hostname);
 	if (!server.sqlPortOpen && ns.fileExists("SQLInject.exe", "home")) ns.sqlinject(server.hostname);
 	ns.nuke(server.hostname);
+	return true;
 }
 
 /**
@@ -53,20 +58,16 @@ async function scanServer(ns, name, exclude) {
 		if (item === exclude || item === 'home') continue;
 		list.push(item);
 	}
-
+	
 	if (list.length > 0) {
 		for (var s of list) {
 			const server = ns.getServer(s);
 			const can = canHackServer(ns, server);
 			if (can) {
-				runHackTools(ns, server);
-				if (server.moneyMax === 0) {
-					ns.tprint(`${server.hostname}，最大金额为0，没有hack价值`);
-				}
-				else {
-					ns.tprint(`${server.hostname}，最大金额${formatMoney(server.moneyMax)}`);
+				var firstHack = runHackTools(ns, server);
+				// if (firstHack && server.moneyMax !== 0) {
 					await hackServer(ns, server)
-				}
+				// }
 			}
 			await scanServer(ns, s, name);
 		}
@@ -91,7 +92,7 @@ function canHackServer(ns, server) {
 	const hackLvl = ns.getHackingLevel();
 	const targetHackLvl = server.requiredHackingSkill;
 	if (targetHackLvl > hackLvl) {
-		ns.tprint(`${server.hostname} 需求Hack等级${targetHackLvl} 大于当前 ${hackLvl}`);
+		ns.print(ns.sprintf("%20s 需求 %5d  当前%d", server.hostname, targetHackLvl, hackLvl));
 		return false;
 	}
 
@@ -99,7 +100,6 @@ function canHackServer(ns, server) {
 	const tools = getCurrentPortTools(ns);
 	const targetPorts = server.numOpenPortsRequired;
 	if (targetPorts > tools) {
-		ns.tprint(`${server.hostname} 需求Port${targetPorts} 大于工具个数 ${tools}`);
 		return false;
 	}
 
@@ -119,7 +119,7 @@ async function hackServer(ns, server) {
 	const free = server.maxRam - server.ramUsed;
 	const thread = parseInt((free / needRam).toString());
 	if (thread > 0) {
-		ns.tprint(`${targetName}能部署线程：${thread}个`);
+		ns.print(`${targetName}能部署线程：${thread}个`);
 		await ns.scp(scriptName, 'home', targetName);
 		ns.exec(scriptName, targetName, thread, server.hostname);
 	}
@@ -128,20 +128,16 @@ async function hackServer(ns, server) {
 /**
  * 金额格式化
  */
- function formatMoney(money) {
+function formatMoney(money) {
 	if (money >= 1e12) {
 		return `${(money / 1e12).toFixed(2)} t`;
-	}
-	else if (money >= 1e9) {
+	} else if (money >= 1e9) {
 		return `${(money / 1e9).toFixed(2)} b`;
-	}
-	else if (money >= 1e6) {
+	} else if (money >= 1e6) {
 		return `${(money / 1e6).toFixed(2)} m`;
-	}
-	else if (money >= 1000) {
+	} else if (money >= 1000) {
 		return `${(money / 1000).toFixed(2)} k`;
-	}
-	else {
+	} else {
 		return `${money}`;
 	}
 }

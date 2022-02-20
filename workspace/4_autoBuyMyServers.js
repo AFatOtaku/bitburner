@@ -18,6 +18,7 @@ export async function main(ns) {
                 var serverName = ns.purchaseServer(`myServer-${own.length}`, ram);
                 if (serverName !== '' && serverName !== null) {
                     ns.print(`[${cnt}]购买服务器${serverName} ${formatRam(ram, 'G')}`)
+                    ns.exec(analyzeHackScript, serverName, 1, "--name", "n00dles");
                 }
                 own = ns.getPurchasedServers()
             } else {
@@ -53,6 +54,7 @@ export async function main(ns) {
                 var minServer = ns.purchaseServer(`myServer`, ram);
                 if (minServer !== '' && minServer !== null) {
                     ns.print(`[${cnt}]升级服务器${minServer} ${formatRam(minRam, 'G')} -> ${formatRam(ram, 'G')}`)
+                    ns.exec(analyzeHackScript, minServer, 1, "--name", "n00dles");
                 }
             }
             var nowRam = ns.getServerMaxRam(minServer)

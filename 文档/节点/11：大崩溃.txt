@@ -1,0 +1,75 @@
+比特节点-11：大崩溃
+
+源文件级别：0 / 3
+
+
+
+难度：正常
+
+
+
+2050年代的定义是世界各地兴起的大量暴力性的民间动乱和无政府主义的叛乱。正是这段无序的时期，最终导致了许多全球超级大国的政府改革，最引人注目的是美国和中国。但就在世界开始慢慢从这些黑暗时期恢复的时候，金融灾难袭来。
+
+在许多国家，试图处理内乱的高成本使政府破产。在所有这些混乱中，黑客能够从世界上最大的电子银行窃取数十亿美元，促使国际银行危机，因为政府无法救助无力偿还的银行。现在，世界在有史以来最大的经济危机中慢慢崩溃了。
+
+在这个BitNode中。
+
+你的黑客状态和经验收益减半
+服务器上可用的起始金额和最大金额大幅减少
+服务器的增长速度大大降低
+削弱一个服务器的效果是两倍
+公司工资减少50%。
+公司的估值降低了90%，因此盈利能力大大降低
+黑客网络节点的生产明显减少
+犯罪和渗透更有利可图
+增援的费用是原来的两倍
+
+摧毁这个比特节点会给你源文件11，或者如果你已经有了这个源文件，它会将它的等级提升到最高3级。这个源文件使得公司的青睐会使玩家在该公司的工资和声誉收益率都增加1%（而不只是声誉收益）。这个源文件还增加了玩家的公司工资和声誉增益倍数。
+
+1级：32%。
+第二级：48%。
+第三级：56%。
+
+它还使每一个购买的ug的价格增加减少了。
+
+1级：4%。
+第二级：6%。
+第三级：7%。
+
+BitNode-11: The Big Crash
+
+Source-File Level: 0 / 3
+
+
+
+Difficulty: normal
+
+
+
+The 2050s was defined by the massive amounts of violent civil unrest and anarchic rebellion that rose all around the world. It was this period of disorder that eventually lead to the governmental reformation of many global superpowers, most notably the USA and China. But just as the world was slowly beginning to recover from these dark times, financial catastrophe hit.
+
+In many countries, the high cost of trying to deal with the civil disorder bankrupted the governments. In all of this chaos and confusion, hackers were able to steal billions of dollars from the world's largest electronic banks, prompting an international banking crisis as governments were unable to bail out insolvent banks. Now, the world is slowly crumbling in the middle of the biggest economic crisis of all time.
+
+In this BitNode:
+
+Your hacking stat and experience gain are halved
+The starting and maximum amount of money available on servers is significantly decreased
+The growth rate of servers is significantly reduced
+Weakening a server is twice as effective
+Company wages are decreased by 50%
+Corporation valuations are 90% lower and are therefore significantly less profitable
+Hacknet Node production is significantly decreased
+Crime and Infiltration are more lucrative
+Augmentations are twice as expensive
+
+Destroying this BitNode will give you Source-File 11, or if you already have this Source-File it will upgrade its level up to a maximum of 3. This Source-File makes it so that company favor increases BOTH the player's salary and reputation gain rate at that company by 1% per favor (rather than just the reputation gain). This Source-File also increases the player's company salary and reputation gain multipliers by:
+
+Level 1: 32%
+Level 2: 48%
+Level 3: 56%
+
+It also reduces the price increase for every aug bought by:
+
+Level 1: 4%
+Level 2: 6%
+Level 3: 7%

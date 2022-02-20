@@ -1,0 +1,29 @@
+
+比特节点-12：递归
+
+源文件级别: 0 / ∞
+
+
+
+难度：简单
+
+
+
+迭代是人类的，递归是神圣的。
+
+每当这个比特节点被摧毁，它就会变得稍微困难一些。摧毁这个比特节点会给你源文件12，如果你已经有了这个源文件，它会提升它的等级。源文件12没有最高等级。源文件12的每一级都可以让你启动任何带有NeuroFlux Governor的BitNodes，其级别与这个源文件的级别相同。
+
+
+BitNode-12: The Recursion
+
+Source-File Level: 0 / ∞
+
+
+
+Difficulty: easy
+
+
+
+To iterate is human, to recurse divine.
+
+Every time this BitNode is destroyed, it becomes slightly harder. Destroying this BitNode will give you Source-File 12, or if you already have this Source-File it will upgrade its level. There is no maximum level for Source-File 12. Each level of Source-File 12 lets you start any BitNodes with NeuroFlux Governor equal to the level of this source file.

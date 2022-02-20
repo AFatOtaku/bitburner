@@ -1,0 +1,36 @@
+比特节点-4：奇点
+
+源文件级别：0 / 3
+
+
+
+难度：普通
+
+
+
+奇点已经到来。人类已经消失了，取而代之的是机器多于人类的人工超级智能。
+
+在这个BitNode中，进展明显困难。所有状态的经验获得率都降低了。大多数挣钱的方法现在都会明显减少。
+
+在这个比特节点中，你将获得一套新的Netscript功能，称为奇点(Singularity)功能。这些功能允许你通过脚本来控制游戏的大部分方面，包括为派别/公司工作，购买/安装增强器，以及创建程序。
+
+摧毁这个比特节点会给你源文件4，如果你已经有了这个源文件，它会将它的等级提升到最高3级。这个源文件可以让你访问和使用其他比特节点的奇点功能。这个源文件的每一级都会减少奇点功能的内存成本。
+
+
+BitNode-4: The Singularity
+
+Source-File Level: 0 / 3
+
+
+
+Difficulty: normal
+
+
+
+The Singularity has arrived. The human race is gone, replaced by artificially superintelligent beings that are more machine than man.
+
+In this BitNode, progressing is significantly harder. Experience gain rates for all stats are reduced. Most methods of earning money will now give significantly less.
+
+In this BitNode you will gain access to a new set of Netscript Functions known as Singularity Functions. These functions allow you to control most aspects of the game through scripts, including working for factions/companies, purchasing/installing Augmentations, and creating programs.
+
+Destroying this BitNode will give you Source-File 4, or if you already have this Source-File it will upgrade its level up to a maximum of 3. This Source-File lets you access and use the Singularity Functions in other BitNodes. Each level of this Source-File reduces the RAM cost of singularity functions

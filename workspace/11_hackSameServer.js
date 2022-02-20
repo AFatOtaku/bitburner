@@ -4,6 +4,8 @@ const scriptName = "/hack/normal-hack.js";
 /** @param {NS} ns **/
 export async function main(ns) {
 
+    var target = ns.args[0];
+
     var homeInfo = ns.getServer("home");
     var serverList = {
         "home": homeInfo
@@ -31,8 +33,9 @@ export async function main(ns) {
     var selfServerList = [];
     for (var i in serverList) {
         var serverInfo = serverList[i];
-        if (serverInfo.purchasedByPlayer || serverInfo.hostname === "home") {
-            // if (serverInfo.hostname === "home") {
+        // if (serverInfo.purchasedByPlayer || serverInfo.hostname === "home") {
+        // if (serverInfo.hostname === "home") {
+        if (serverInfo.purchasedByPlayer) {
             selfServerList.push(serverInfo);
             continue;
         }
@@ -42,53 +45,34 @@ export async function main(ns) {
             }
         }
     }
-    adminServerList = sortByServerGrowthAndHackTime(adminServerList,30,ns)
+    adminServerList = sortByServerGrowth(adminServerList)
     selfServerList = sortByRam(selfServerList)
     for (var i = 0; i < adminServerList.length; i++) {
-        ns.tprint(ns.sprintf("%20s 自行运行脚本", adminServerList[i].hostname));
         await hackServer(ns, adminServerList[i])
     }
-    ns.tprint(`已有服务器${selfServerList.length}个   已駭入有价值服务器${adminServerList.length}个`)
-    var l = Math.min(adminServerList.length, selfServerList.length);
-    var mulServerCnt = 0;
-    var hackCnt = 0;
-    for (var i = 0; i < l; i++) {
+    for (var i = 0; i < selfServerList.length; i++) {
         var myServer = selfServerList[i];
-        var adminServer = adminServerList[i + mulServerCnt];
-        var nowRam = myServer.maxRam;
         if (myServer.hostname === "home") {
-            nowRam -= 30;
             var plist = ns.ps();
             for (var k in plist) {
                 var pname = plist[k]["filename"];
                 var pid = plist[k]["pid"]
-                if (pname !== "6_setHack.js") {
-                    await ns.kill(pid,"home");
+                if (pname !== "11_hackSameServer.js") {
+                    await ns.kill(pid, "home");
                 }
             }
             await ns.exec("/tools/scan-deploy-normal-hack.js", "home", 1);
         } else {
             await ns.killall(myServer.hostname)
+            await ns.scp(analyzeHackScript, 'home', myServer.hostname);
+            await ns.sleep(50);
         }
-        await ns.scp(analyzeHackScript, 'home', myServer.hostname);
-        do {
-            var needRam = getHackNeedRam(ns, myServer, adminServer) * 1.1;
-            ns.exec(analyzeHackScript, myServer.hostname, 1, "--name", adminServer.hostname);
-            hackCnt++;
-            var ht = ns.getHackTime(adminServer.hostname);
-            ns.tprint(ns.sprintf(`%12s (%10s) 将hack服务器 %18s (成长:%4d) HT: %5s 需要RAM %9s   剩余RAM %9s`, myServer.hostname, formatRam(myServer.maxRam, 'G'), adminServer.hostname, adminServer.serverGrowth,`${(ht / 1000).toFixed(2)}`, formatRam(needRam, 'G'), formatRam(nowRam, 'G')))
-            nowRam = nowRam - needRam;
-            if (nowRam > 50) {
-                mulServerCnt++;
-                adminServer = adminServerList[i + mulServerCnt];
-            }
-            if (hackCnt > adminServerList.length - 1) {
-                break;
-            }
-        } while (nowRam > 50)
-        if (hackCnt > adminServerList.length - 1) {
-            break;
-        }
+    }
+    for (var i = 0; i < selfServerList.length; i++) {
+        var myServer = selfServerList[i];
+        ns.exec(analyzeHackScript, myServer.hostname, 1, "--name", target);
+        ns.tprint(myServer.hostname)
+        await ns.sleep(2000);
     }
     ns.tprint("=======================")
 }
@@ -98,28 +82,6 @@ function sortByRam(list) {
     for (var i = 0; i < len - 1; i++) {
         for (var j = 0; j < len - 1 - i; j++) {
             if (list[j].maxRam < list[j + 1].maxRam) {
-                var temp = list[j];
-                list[j] = list[j + 1];
-                list[j + 1] = temp;
-            }
-        }
-    }
-    return list;
-}
-
-function sortByServerGrowthAndHackTime(list,check,ns) {
-    var len = list.length;
-    for (var i = 0; i < len - 1; i++) {
-        for (var j = 0; j < len - 1 - i; j++) {
-            var c1 = list[j].serverGrowth;
-            var c2 = list[j + 1].serverGrowth;
-            if(ns.getHackTime(list[j].hostname) > check * 1000){
-                c1 -= 9999;
-            }
-            if(ns.getHackTime(list[j + 1].hostname) > check * 1000){
-                c2 -= 9999;
-            }
-            if (c1 < c2) {
                 var temp = list[j];
                 list[j] = list[j + 1];
                 list[j + 1] = temp;
@@ -182,7 +144,7 @@ const weakenScript = `${folder}/do-weaken.js`;
 const growScript = `${folder}/do-grow.js`;
 const hackScript = `${folder}/do-hack.js`;
 
-function getHackNeedRam(ns, hostServer, server) {
+function getHackNeedRam(ns, server) {
 
     // 目标服务器当前情况
     const moneyMax = ns.getServerMaxMoney(server.hostname);
@@ -228,8 +190,6 @@ function getHackNeedRam(ns, hostServer, server) {
     }
 
     ns.print(`初步计算\nWeaken(t=${weakenThread}), 安全(${security.toFixed(2)}), 阈值(${securityThreshold.toFixed(2)})\nGrow(t=${growThread}), 当前(${formatMoney(money)}), 阈值(${(formatMoney(moneyThreshold))}),\nHack(t=${hackThread})`);
-    // 判断Ram占用是否超出上限
-    let freeRam = hostServer.maxRam - ns.getServerUsedRam(hostServer.hostname);
     var totalNeedRam = 0;
     let weakenNeedRam = weakenThread * weakenRam;
     let growNeedRam = growThread * growRam;

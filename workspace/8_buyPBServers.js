@@ -7,49 +7,16 @@ export async function main(ns) {
     ns.tprint(`=======开始运行=======`);
     var own = ns.getPurchasedServers();
     var max = ns.getPurchasedServerLimit();
-    var maxRam = ns.getPurchasedServerMaxRam();
-    while (max - own.length > 0) {
-        var ram = canBuyMaxRam(ns);
-        if (ram > 1) {
-            var serverName = ns.purchaseServer(`myServer-${own.length}`, ram);
-            if (serverName !== '' && serverName !== null) {
-                ns.tprint(`[${cnt}]购买服务器${serverName} ${formatRam(ram, 'G')}`)
-            }
-            own = ns.getPurchasedServers()
-        } else {
-            break;
+    ns.tprint(`目前能卖的最高服务器${formatRam(ns.getPurchasedServerMaxRam(),'G')}`)
+    ns.tprint(`${formatRam(ns.getPurchasedServerMaxRam(),'G')} 服务器售价:${formatMoney(ns.getPurchasedServerCost(ns.getPurchasedServerMaxRam()))}`)
+    while (myMoney(ns) > ns.getPurchasedServerCost(ns.getPurchasedServerMaxRam()) && max - own.length > 0) {
+        var ram = ns.getPurchasedServerMaxRam();
+        var serverName = ns.purchaseServer(`myServer-${own.length}`, ram);
+        if (serverName !== '' && serverName !== null) {
+            ns.tprint(`购买服务器${serverName} ${formatRam(ram, 'G')}`)
         }
+        own = ns.getPurchasedServers()
         await ns.sleep(10);
-    }
-    // 升级服务器
-    var checkServer = [];
-    while (checkServer.length < own.length) {
-        var minServer = '';
-        var minRam = 10 * 1024 * 1024;
-        for (var i in own) {
-            var serverName = own[i]
-            if (checkServer.includes(serverName)) {
-                continue;
-            }
-            var nowRam = ns.getServerMaxRam(serverName)
-            if (nowRam < minRam) {
-                minRam = nowRam;
-                minServer = serverName;
-            }
-        }
-        if (minServer === '') {
-            break;
-        }
-        checkServer.push(minServer)
-        var ram = canBuyMaxRam(ns);
-        if (ram > minRam) {
-            await ns.killall(minServer)
-            await ns.deleteServer(minServer)
-            var minServer = ns.purchaseServer(`myServer`, ram);
-            if (minServer !== '' && minServer !== null) {
-                ns.tprint(`[${cnt}]升级服务器${minServer} ${formatRam(minRam, 'G')} -> ${formatRam(ram, 'G')}`)
-            }
-        }
     }
     ns.tprint(`=======运行结束=======`);
 }
@@ -59,7 +26,7 @@ function canBuyMaxRam(ns) {
     var canBuyRam = maxRam;
     while (myMoney(ns) < ns.getPurchasedServerCost(canBuyRam)) {
         canBuyRam = canBuyRam / 2;
-        if (canBuyRam < 32) {
+        if (canBuyRam < 1024) {
             canBuyRam = -1;
             break;
         }

@@ -1,0 +1,67 @@
+
+比特诺德-9：黑客政治
+
+源文件级别: 0 / 3
+
+
+
+难度: 难
+
+
+
+当Fulcrum Technologies发布他们的开源Linux发行版Chapeau时，它迅速成为地下黑客社区的首选操作系统。Chapeau因为为Hacknet提供动力而变得特别臭名昭著，这是一个用于邪恶目的的全球分散网络。Fulcrum很快就放弃了这个项目并与之脱离关系。
+
+这个BitNode可以解锁Hacknet服务器，这是Hacknet节点的升级版。Hacknet服务器产生的哈希值，可以用于各种不同的升级。
+
+在这个BitNode中
+
+你的状态会明显下降
+你不能购买额外的服务器
+黑客活动的利润明显降低
+
+摧毁这个比特节点将给你提供源文件9，如果你已经有了这个源文件，它将升级它的等级，最高可达3级。 这个源文件给予以下好处。
+
+1级：永久解锁其他BitNode的Hacknet服务器
+2级：当你进入一个新的BitNode时，你的家庭电脑开始有128GB的内存。
+第3级：进入一个新的BitNode时，可以获得一个高度升级的Hacknet服务器。
+
+(请注意，这个源文件的第三级效果只适用于进入一个新的比特节点，而不是在安装增强程序时。）
+
+这个源文件还可以增加你的黑客网络倍增器。
+1级：8%。
+第二级：12%。
+第三级：14%。
+
+
+BitNode-9: Hacktocracy
+
+Source-File Level: 0 / 3
+
+
+
+Difficulty: hard
+
+
+
+When Fulcrum Technologies released their open-source Linux distro Chapeau, it quickly became the OS of choice for the underground hacking community. Chapeau became especially notorious for powering the Hacknet, a global, decentralized network used for nefarious purposes. Fulcrum quickly abandoned the project and dissociated themselves from it.
+
+This BitNode unlocks the Hacknet Server, an upgraded version of the Hacknet Node. Hacknet Servers generate hashes, which can be spent on a variety of different upgrades.
+
+In this BitNode:
+
+Your stats are significantly decreased
+You cannnot purchase additional servers
+Hacking is significantly less profitable
+
+Destroying this BitNode will give you Source-File 9, or if you already have this Source-File it will upgrade its level up to a maximum of 3. This Source-File grants the following benefits:
+
+Level 1: Permanently unlocks the Hacknet Server in other BitNodes
+Level 2: You start with 128GB of RAM on your home computer when entering a new BitNode
+Level 3: Grants a highly-upgraded Hacknet Server when entering a new BitNode
+
+(Note that the Level 3 effect of this Source-File only applies when entering a new BitNode, NOT when installing Augmentations)
+
+This Source-File also increases your hacknet multipliers by:
+Level 1: 8%
+Level 2: 12%
+Level 3: 14%
