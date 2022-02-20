@@ -5,5 +5,6 @@ export async function main(ns) {
     ns.tprint("[ run /tools/run-analyze-hack.js <部署服务器> <Hack目标服务器> ] 复制analyze-hack脚本到部署服务器上，然后在部署服务器上执行动态分析Hack脚本，攻击目标服务器，该命令适用于高内存的服务器。")
     ns.tprint("CSEC: home -> joesguns -> CSEC")
     ns.tprint("run /tools/run-analyze-hack.js home n00dles")
-    ns.tprint("run /tools/run-analyze-hack.js home foodnstuff")
+    ns.tprint("run /tools/run-analyze-hack.js home joesguns")
 }
+
